@@ -1,5 +1,12 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import { Path } from "../../config";
+import { Favorites } from "../../pages/Favorites/Favorites";
+import { Home } from "../../pages/Home/Home";
+import { Login } from "../../pages/Login/Login";
+import { Registration } from "../../pages/Registration/Registration";
+import { Settings } from "../../pages/Settings/Settings";
+import { Trends } from "../../pages/Trends/Trends";
 
 export const AppRouter = () => {
   return (
