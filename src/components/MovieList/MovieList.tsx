@@ -1,11 +1,11 @@
-import { IFilm } from "../../types/types";
+import { IMovies } from "../../types/types";
 import { MovieCard } from "../MovieCard/MovieCard";
 import { MovieList } from "./styles";
 
 interface IProps {
-  movies: IFilm[];
+  movies: IMovies[];
 }
-export const FilmList = ({ movies }: IProps) => {
+export const MoviesList = ({ movies }: IProps) => {
   return (
     <MovieList>
       {movies.map(({ imdbID, Title, Poster }) => (

@@ -3,7 +3,7 @@ interface IRating {
   Value: string;
 }
 
-export interface IFilmInfoAPI {
+export interface IMovieInfoAPI {
   Title: string;
   Year: string;
   Rated: string;
@@ -28,7 +28,7 @@ export interface IFilmInfoAPI {
   BoxOffice: string;
 }
 
-export interface IFilm {
+export interface IMovies {
   Title: string;
   Year: string;
   imdbID: string;
@@ -37,5 +37,5 @@ export interface IFilm {
 }
 
 export interface IDataSearch {
-  Search: IFilm[];
+  Search: IMovies[];
 }
