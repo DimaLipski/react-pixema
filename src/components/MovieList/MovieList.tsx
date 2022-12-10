@@ -1,3 +1,4 @@
+
 import { IMovies } from "../../types/types";
 import { MovieCard } from "../MovieCard/MovieCard";
 import { MovieList } from "./styles";

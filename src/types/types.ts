@@ -1,8 +1,18 @@
-interface IRating {
-  Source: string;
-  Value: string;
-}
 
+export interface IMovies {
+  Title: string;
+  Year: string;
+  imdbID: string;
+  Type: string;
+  Poster: string;
+}
+export interface IMovieAPI {
+  Title: string;
+  Year: string;
+  imdbID: string;
+  Type: string;
+  Poster: string;
+}
 export interface IMovieInfoAPI {
   Title: string;
   Year: string;
@@ -28,14 +38,13 @@ export interface IMovieInfoAPI {
   BoxOffice: string;
 }
 
-export interface IMovies {
-  Title: string;
-  Year: string;
-  imdbID: string;
-  Type: string;
-  Poster: string;
+export interface IRating {
+  Source: string;
+  Value: string;
 }
 
-export interface IDataSearch {
-  Search: IMovies[];
+export interface ResponseAPI {
+  Search: IMovieAPI[];
+  totalResult: string;
+  Response: string;
 }

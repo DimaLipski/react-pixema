@@ -5,4 +5,4 @@ export * from "./CustomSelect/CustomSelect";
 export * from "./MenuNav/MenuNav";
 export * from "./AppRouter/AppRouter";
 export * from "./MovieCard/MovieCard";
-export * from "./FilmList/FilmList";
+export * from "./MovieList/MovieList";
