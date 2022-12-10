@@ -15,7 +15,7 @@ export const StyledFilmCard = styled.li`
   }
 `;
 
-export const StyledFilmImg = styled.img`
+export const MovieImg = styled.img`
   width: 266px;
   height: 357px;
   border-radius: 20px;
@@ -30,7 +30,7 @@ export const StyledFilmImg = styled.img`
     height: 365px;
   }
 `;
-export const StyledFilmTitle = styled.p`
+export const MovieTitle = styled.p`
   ${typography.S2};
   transition: 0.3s color ease-in-out;
   &:hover {

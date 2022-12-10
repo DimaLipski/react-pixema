@@ -4,5 +4,5 @@ export * from "./MenuLink/MenuLink";
 export * from "./CustomSelect/CustomSelect";
 export * from "./MenuNav/MenuNav";
 export * from "./AppRouter/AppRouter";
-export * from "./FilmCard/FilmCard";
+export * from "./MovieCard/MovieCard";
 export * from "./FilmList/FilmList";

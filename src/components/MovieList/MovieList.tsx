@@ -1,16 +1,16 @@
 import { IFilm } from "../../types/types";
-import { FilmCard } from "../FilmCard/FilmCard";
-import { StyledFilmList } from "./styles";
+import { MovieCard } from "../MovieCard/MovieCard";
+import { MovieList } from "./styles";
 
 interface IProps {
   movies: IFilm[];
 }
 export const FilmList = ({ movies }: IProps) => {
   return (
-    <StyledFilmList>
+    <MovieList>
       {movies.map(({ imdbID, Title, Poster }) => (
-        <FilmCard key={imdbID} title={Title} img={Poster} id={imdbID} />
+        <MovieCard key={imdbID} title={Title} img={Poster} id={imdbID} />
       ))}
-    </StyledFilmList>
+    </MovieList>
   );
 };
