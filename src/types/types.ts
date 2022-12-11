@@ -36,6 +36,9 @@ export interface IMovieInfoAPI {
   Type: string;
   DVD: string;
   BoxOffice: string;
+  Production: string;
+  Website: string;
+  Response: string;
 }
 
 export interface IRating {
@@ -43,8 +46,42 @@ export interface IRating {
   Value: string;
 }
 
+export interface IMovieDetails {
+  title: string;
+  year: string;
+  rated: string;
+  released: string;
+  runtime: string;
+  genre: string;
+  director: string;
+  writer: string;
+  actors: string;
+  plot: string;
+  language: string;
+  country: string;
+  awards: string;
+  poster: string;
+  metascore: string;
+  imdbRating: string;
+  imdbVotes: string;
+  imdbID: string;
+  type: string;
+  dvd: string;
+  boxOffice: string;
+  production: string;
+  website: string;
+  response: string;
+}
+
 export interface ResponseAPI {
   Search: IMovieAPI[];
-  totalResult: string;
-  Response: string;
+  totalResults: string;
+  Response: boolean;
+  Error?: string;
+}
+
+export interface FilterValue {
+  type: string;
+  s: string;
+  y: string;
 }
