@@ -85,3 +85,11 @@ export interface FilterValue {
   s: string;
   y: string;
 }
+
+export interface IMovie {
+  poster: string;
+  title: string;
+  type: string;
+  year: string;
+  imdbID: string;
+}

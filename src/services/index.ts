@@ -1,1 +1,3 @@
-export * from "./restMoviesAPI"
+import { moviesApi } from "./restMoviesAPI";
+
+export { moviesApi };
