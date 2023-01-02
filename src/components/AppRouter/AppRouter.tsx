@@ -4,7 +4,7 @@ import { Path } from "../../config";
 import { Favorites } from "../../pages/Favorites/Favorites";
 import { Home } from "../../pages/Home/Home";
 import { Login } from "../../pages/Login/Login";
-import { Registration } from "../../pages/Registration/Registration";
+import { Registration } from "../../pages/ResetPassword/Registration";
 import { Settings } from "../../pages/Settings/Settings";
 import { Trends } from "../../pages/Trends/Trends";
 
