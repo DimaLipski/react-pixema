@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Path } from "../../config";
-import { Favorites } from "../../pages/Favorites/Favorites";
-import { Home } from "../../pages/Home/Home";
-import { Login } from "../../pages/Login/Login";
-import { Registration } from "../../pages/ResetPassword/Registration";
-import { Settings } from "../../pages/Settings/Settings";
-import { Trends } from "../../pages/Trends/Trends";
+import { Favorites } from "../../pages/FavoritesPage/FavoritesPage";
+import { Home } from "../../pages/HomePage/HomePage";
+import { Login } from "../../pages/LoginPage/LoginPage";
+import { Registration } from "../../pages/ResetPasswordPage/Registration";
+import { Settings } from "../../pages/SettingsPage/SettingsPage";
+import { Trends } from "../../pages/TrendsPage/TrendsPage";
 
 export const AppRouter = () => {
   return (

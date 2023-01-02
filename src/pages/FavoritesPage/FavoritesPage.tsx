@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Favorites = () => {
+export const FavoritesPage = () => {
   return (
     <div>Favorites</div>
   )
