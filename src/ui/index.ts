@@ -1,7 +1,6 @@
-export * from "./resetCSS";
-export * from "./media";
-export * from "./typography";
-export * from "./margin";
-export * from "./theme";
-export * from "./globalStyles";
-export * from "./input";
+import { Color } from "./colors";
+import { GlobalStyles } from "./GlobalStyles";
+import { reset } from "./reset";
+import { themeColors } from "./theme";
+
+export { Color, GlobalStyles, reset, themeColors };
