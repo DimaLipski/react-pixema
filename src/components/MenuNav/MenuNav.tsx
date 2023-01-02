@@ -1,5 +1,5 @@
 import { Path } from "../../config";
-import { MenuLink } from "../MenuLink/MenuLink";
+import { MenuLink } from "../Menu/MenuLink";
 import { StyledMenuNav } from "./styles";
 
 const navs = [
