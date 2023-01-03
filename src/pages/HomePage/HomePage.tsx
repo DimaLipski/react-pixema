@@ -1,10 +1,10 @@
+import { MovieList } from "components";
+import { LoadingMoreSpinner } from "components";
 import { useEffect } from "react";
-import { LoadingMoreSpinner } from "../../components/LoadingMoreSpinner/LoadingMoreSpinner";
-import { MovieList } from "../../components/MovieList/MovieList";
-import { fetchMovies, fetchShowMoreMovies, updatePage } from "../../store/features/moviesSlice";
-import { useAppDispatch, useAppSelector } from "../../store/hooks/hooks";
-import { getMovies } from "../../store/selectors/movieSelector";
-
+import { fetchMovies } from "store/features";
+import { fetchShowMoreMovies, updatePage } from "store/features";
+import { useAppDispatch, useAppSelector } from "store/hooks";
+import { getMovies } from "store/selectors";
 import { Clue, Container, EndMessage, ShowMoreButton } from "./styles";
 
 export const HomePage = () => {
