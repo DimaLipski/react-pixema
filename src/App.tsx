@@ -1,7 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { MainTemplate } from "./components/MainTemplate/MainTemplate";
-import { HomePage } from "./pages/HomePage/HomePage";
+
 import { ROUTE } from "./routes/route";
+import { HomePage } from "./pages/HomePage/HomePage";
+
 
 export const App = () => {
   return (
@@ -9,9 +11,8 @@ export const App = () => {
       <Route path={ROUTE.HOME} element={<MainTemplate />}>
         <Route index element={<HomePage />} />
         
-      </Route>
-      
-      
+        </Route>
+        
     </Routes>
   );
 };

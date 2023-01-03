@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import {
   BurgerButton,
   Container,
@@ -21,6 +21,7 @@ import { useWindowSize } from "../../hooks/useWindowSize";
 import { useDebounce, useInput, useToggle } from "../../hooks";
 import { fetchMovies, fetchSortMovies } from "../../store/features/moviesSlice";
 import { BurgerIcon, logoIcon, logoLightIcon, SearchIcon } from "../../assets";
+import { useEffect, useState } from "react";
 
 export const SearchBar = () => {
   const { name, isAuth, isDark } = useAppSelector(getUserInfo);
