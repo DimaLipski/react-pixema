@@ -1,7 +1,7 @@
 import { CustomLink } from "./CustomLink/CustomLink";
 import { MainTemplate } from "./MainTemplate/MainTemplate";
 import { AuthTemplate } from "./AuthTemplate/AuthTemplate";
-import { Menu } from "./Menu/Menu";
+
 import { MovieList } from "./MovieList/MovieList";
 import { MovieListItem } from "./MovieListItem/MovieListItem";
 import { RequireAuth } from "./RequireAuth/RequireAuth";

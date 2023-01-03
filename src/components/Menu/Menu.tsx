@@ -1,17 +1,22 @@
-import { NavLink } from "react-router-dom";
-import { activeStyle, StyledNavItem } from "./styles";
+import { CustomLink } from "components";
+import { ToolBar, Footer, Title } from "./styles";
+import { ROUTE } from "routes";
 
-interface IProps {
-  title: string;
-  to: string;
-}
-
-export const MenuLink = ({ title, to }: IProps) => {
+export const Menu = () => {
   return (
-    <StyledNavItem>
-      <NavLink to={to} style={({ isActive }) => (isActive ? activeStyle : undefined)}>
-        {title}
-      </NavLink>
-    </StyledNavItem>
+    <ToolBar>
+      <CustomLink to={ROUTE.HOME}>
+      </CustomLink>
+      <CustomLink to={ROUTE.TRENDS}>
+        <Title>Trends</Title>
+      </CustomLink>
+      <CustomLink to={ROUTE.FAVORITES}>
+        <Title>Favorites</Title>
+      </CustomLink>
+      <CustomLink to={ROUTE.SETTINGS}>
+        <Title>Settings</Title>
+      </CustomLink>
+      <Footer>© All Rights Reserved</Footer>
+    </ToolBar>
   );
 };

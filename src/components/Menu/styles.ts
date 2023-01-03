@@ -1,21 +1,22 @@
 import styled from "styled-components";
-import { Color } from "../../config";
-import { typography } from "../../ui";
+import { Color } from "ui";
 
-export const activeStyle = {
-  color: Color.PRIMARY,
-};
+export const ToolBar = styled.div`
+  position: fixed;
+  z-index: 1;
+  display: grid;
+  align-items: start;
+  grid-gap: 40px;
+`;
 
-export const StyledNavItem = styled.li`
-  & a {
-    ${typography.S1};
-    color: ${Color.SECONDARY};
-    transition: 0.3s color ease-in-out;
-    &:hover {
-      color: ${Color.PRIMARY_LIGHT};
-    }
-    &:disabled {
-      color: ${Color.GRAPHITE};
-    }
-  }
+export const Footer = styled.span`
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  margin-bottom: 20px;
+  color: ${Color.White};
+`;
+
+export const Title = styled.p`
+  margin-left: 20px;
 `;
