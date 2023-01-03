@@ -1,9 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
-import { transformShortMovieDescription } from "../../services/mappers/mappers";
-import { moviesAPI } from "../../services/restMoviesAPI";
-import { IMovie } from "../../types/types";
-
+import { transformShortMovieDescription } from "services/mappers";
+import { moviesAPI } from "services";
+import { IMovie } from "types";
 
 interface TrendsState {
   trends: IMovie[];

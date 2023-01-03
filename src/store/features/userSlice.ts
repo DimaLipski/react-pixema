@@ -10,8 +10,8 @@ import {
   updatePassword,
   User,
 } from "firebase/auth";
-import { Theme } from "../../ui/theme";
-import { FirebaseError, FirebaseErrorCode, getFirebaseMessage } from "../../utils/firebaseErrors";
+import { Theme } from "ui/theme";
+import { FirebaseError, FirebaseErrorCode, getFirebaseMessage } from "utils/firebaseErrors";
 
 interface IUserState {
   isAuth: boolean;

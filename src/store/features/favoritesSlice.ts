@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IMovieDetails } from "../../types/types";
+import { IMovieDetails } from "types";
 
 interface IFavoritesState {
   favorites: IMovieDetails[];

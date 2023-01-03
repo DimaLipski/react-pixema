@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
-import { transformMovieCardInfo } from "../../services/mappers/mappers";
-import { moviesAPI } from "../../services/restMoviesAPI";
-import { IMovieDetails } from "../../types/types";
+import { transformMovieCardInfo } from "services/mappers";
+import { moviesAPI } from "services";
+import { IMovieDetails } from "types";
 
 interface MovieDetailsState {
   movieDetails: IMovieDetails;
