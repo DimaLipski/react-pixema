@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
 import { transformShortMovieDescription } from "../../services/mappers/mappers";
-import { moviesApi } from "../../services/restMoviesAPI";
+import { moviesAPI } from "../../services/restMoviesAPI";
 import { FilterValue, IMovie } from "../../types/types";
 
 interface MoviesState {
@@ -25,7 +25,7 @@ const initialState: MoviesState = {
 };
 
 export const fetchMovies = createAsyncThunk<IMovie[]>("movies/fetchMovies", async () => {
-  const response = await moviesApi.getAll();
+  const response = await moviesAPI.getAll();
 
   return transformShortMovieDescription(response.Search);
 });
@@ -34,7 +34,7 @@ export const fetchShowMoreMovies = createAsyncThunk<IMovie[], string, { rejectVa
   "movies/fetchShowMoreMovies",
   async (page, { rejectWithValue }) => {
     try {
-      const response = await moviesApi.getMoreMovies(page);
+      const response = await moviesAPI.getMoreMovies(page);
 
       return transformShortMovieDescription(response.Search);
     } catch (error) {
@@ -49,7 +49,7 @@ export const fetchSortMovies = createAsyncThunk<IMovie[], string, { rejectValue:
   "movies/fetchSortMovies",
   async (movieTitle, { rejectWithValue }) => {
     try {
-      const response = await moviesApi.sortedMovies(movieTitle);
+      const response = await moviesAPI.sortedMovies(movieTitle);
       return transformShortMovieDescription(response.Search);
     } catch (error) {
       const axiosError = error as AxiosError;
@@ -63,7 +63,7 @@ export const fetchMoviesByParams = createAsyncThunk<IMovie[], FilterValue, { rej
   "movies/fetchMoviesByParams",
   async (values, { rejectWithValue }) => {
     try {
-      const response = await moviesApi.sortedMoviesByUserParams(values);
+      const response = await moviesAPI.sortedMoviesByUserParams(values);
       return transformShortMovieDescription(response.Search);
     } catch (error) {
       const axiosError = error as AxiosError;
@@ -79,7 +79,7 @@ export const fetchMoviesRecommendations = createAsyncThunk<
   { rejectValue: string }
 >("movies/fetchMoviesRecommendations", async (movieTitle, { rejectWithValue }) => {
   try {
-    const response = await moviesApi.sortedMovies(movieTitle);
+    const response = await moviesAPI.sortedMovies(movieTitle);
     return transformShortMovieDescription(response.Search);
   } catch (error) {
     const axiosError = error as AxiosError;

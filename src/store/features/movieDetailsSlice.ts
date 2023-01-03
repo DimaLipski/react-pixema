@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
 import { transformMovieCardInfo } from "../../services/mappers/mappers";
-import { moviesApi } from "../../services/restMoviesAPI";
+import { moviesAPI } from "../../services/restMoviesAPI";
 import { IMovieDetails } from "../../types/types";
 
 interface MovieDetailsState {
@@ -22,7 +22,7 @@ export const fetchMovieDetailsByImdbID = createAsyncThunk<
   { rejectValue: string }
 >("movie/fetchMovieDetailsByImdbID", async (imdbID, { rejectWithValue }) => {
   try {
-    const response = await moviesApi.getDetailsByImdbID(imdbID);
+    const response = await moviesAPI.getDetailsByImdbID(imdbID);
     return transformMovieCardInfo(response);
   } catch (error) {
     const axiosError = error as AxiosError;

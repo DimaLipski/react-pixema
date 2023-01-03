@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { AxiosError } from "axios";
 import { transformShortMovieDescription } from "../../services/mappers/mappers";
-import { moviesApi } from "../../services/restMoviesAPI";
+import { moviesAPI } from "../../services/restMoviesAPI";
 import { IMovie } from "../../types/types";
 
 
@@ -21,7 +21,7 @@ export const fetchTrends = createAsyncThunk<IMovie[], string, { rejectValue: str
   "trends/fetchTrends",
   async (year, { rejectWithValue }) => {
     try {
-      const response = await moviesApi.getTrends(year);
+      const response = await moviesAPI.getTrends(year);
       return transformShortMovieDescription(response.Search);
     } catch (error) {
       const axiosError = error as AxiosError;
