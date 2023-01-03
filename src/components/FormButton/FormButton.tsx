@@ -1,7 +1,10 @@
-import React from 'react'
+import { Button } from "./styles";
 
-export const FormButton = () => {
-  return (
-    <div>FormButton</div>
-  )
+interface IProps {
+  children: string;
+  type: "button" | "submit" | "reset" | undefined;
 }
+
+export const FormButton = ({ children, type }: IProps) => {
+  return <Button type={type} children={children} />;
+};
