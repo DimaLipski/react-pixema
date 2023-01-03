@@ -93,3 +93,8 @@ export interface IMovie {
   year: string;
   imdbID: string;
 }
+
+export interface IOption {
+  value: string;
+  label: string;
+}
