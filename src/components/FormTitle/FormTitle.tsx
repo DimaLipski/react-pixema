@@ -1,7 +1,9 @@
-import React from 'react'
+import { Title } from "./styles";
 
-export const FormTitle = () => {
-  return (
-    <div>FormTitle</div>
-  )
+interface IProps {
+  children: string;
 }
+
+export const FormTitle = ({ children }: IProps) => {
+  return <Title children={children} />;
+};
