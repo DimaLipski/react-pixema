@@ -13,7 +13,7 @@ export interface IMovieAPI {
   Type: string;
   Poster: string;
 }
-export interface IMovieInfoAPI {
+export interface  IMovieDetailsAPI {
   Title: string;
   Year: string;
   Rated: string;
