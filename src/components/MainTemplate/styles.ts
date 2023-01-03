@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Color } from "ui";
+import { Color } from "../../ui";
+
 
 export const Container = styled.div`
   max-width: 1920px;

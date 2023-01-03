@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BurgerMenu, CustomLink, SearchMenu } from "components";
 import { BurgerIcon, logoIcon, logoLightIcon, SearchIcon } from "assets";
 import { useDebounce, useInput, useToggle, useWindowSize } from "hooks";
-import { ROUTE } from "routes";
+
 import { fetchMovies, fetchSortMovies } from "store/features";
 import { useAppDispatch, useAppSelector } from "store/hooks";
 import { getUserInfo } from "store/selectors";
@@ -18,6 +18,7 @@ import {
   Wrapper,
 } from "./styles";
 import { useMatch, useNavigate } from "react-router-dom";
+import { ROUTE } from "../../routes/route";
 
 export const SearchBar = () => {
   const { name, isAuth, isDark } = useAppSelector(getUserInfo);
@@ -33,7 +34,8 @@ export const SearchBar = () => {
   useEffect((): void => {
     if (debounceValue) {
       dispatch(fetchSortMovies(debounceValue));
-    } else {
+    } 
+    else {
       dispatch(fetchMovies());
     }
   }, [debounceValue, dispatch, navigate, setValue, isHome]);
