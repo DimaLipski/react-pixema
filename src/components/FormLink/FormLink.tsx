@@ -1,7 +1,11 @@
-import React from 'react'
+import { ReactNode } from "react";
+import { StyledFormLink } from "./styles";
 
-export const FormLink = () => {
-  return (
-    <div>FormLink</div>
-  )
+interface IProps {
+  children: ReactNode;
+  to: string;
 }
+
+export const FormLink = ({ children, to }: IProps) => {
+  return <StyledFormLink to={to} children={children} />;
+};
