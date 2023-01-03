@@ -1,6 +1,7 @@
-import { CustomLink } from "components";
+import { ROUTE } from "../../routes";
+import { CustomLink } from "../CustomLink/CustomLink";
 import { ToolBar, Footer, Title } from "./styles";
-import { ROUTE } from "routes";
+
 
 export const Menu = () => {
   return (
