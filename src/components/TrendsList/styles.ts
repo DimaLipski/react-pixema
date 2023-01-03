@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Color } from "../../ui/colors";
-
+import { Color } from "ui";
 
 export const StyledMovieList = styled.ul`
   display: flex;

@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import { fetchTrends } from "../../store/features/trendsSlice";
-import { useAppDispatch, useAppSelector } from "../../store/hooks/hooks";
-import { getTrends } from "../../store/selectors/trendsSelector";
-import { IMovie } from "../../types/types";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
-import { MovieListItem } from "../MovieListItem/MovieListItem";
+import { LoadingSpinner, MovieListItem } from "components";
+import { fetchTrends } from "store/features/";
+import { useAppDispatch, useAppSelector } from "store/hooks";
+import { getTrends } from "store/selectors";
+import { IMovie } from "types";
 import { StyledMovieList } from "./styles";
 
 interface IProps {
