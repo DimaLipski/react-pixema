@@ -1,7 +1,7 @@
-import { useAppSelector } from "../../store/hooks/hooks";
-import { getFavorites } from "../../store/selectors/favoritesSelector";
-import { IMovie } from "../../types/types";
-import { MovieListItem } from "../MovieListItem/MovieListItem";
+import { MovieListItem } from "components";
+import { useAppSelector } from "store/hooks";
+import { getFavorites } from "store/selectors";
+import { IMovie } from "types";
 import { StyledFavoritesList } from "./styles";
 
 export const FavoritesList = () => {
