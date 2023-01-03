@@ -1,4 +1,4 @@
-import { IMovie, IMovieAPI, IMovieDetails, IMovieDetailsAPI } from "../../types/types";
+import { IMovie, IMovieAPI, IMovieDetails, IMovieDetailsAPI } from "types";
 
 export const transformShortMovieDescription = (search: IMovieAPI[]): IMovie[] => {
   return search.map((movie: IMovieAPI) => {

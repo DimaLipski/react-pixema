@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FilterValue, IMovieDetailsAPI, IMoviesResponseAPI } from "../types/types";
+import { FilterValue, IMovieDetailsAPI, IMoviesResponseAPI } from "types";
 
 
 class MoviesAPI {
