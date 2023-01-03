@@ -1,13 +1,15 @@
 import axios from "axios";
-import { FilterValue, IMovieDetails, ResponseAPI } from "../types/types";
+import { FilterValue, IMovieDetailsAPI, IMoviesResponseAPI } from "../types/types";
 
-class MoviesApi {
+
+class MoviesAPI {
   private readonly BASE_URL = process.env.REACT_APP_MOVIE_BASE_URL as string;
   private readonly API_KEY = process.env.REACT_APP_MOVIE_API_KEY as string;
-  
+
   private readonly API = axios.create({
     baseURL: this.BASE_URL,
   });
+
   private readonly words = [
     "Batman",
     "War",
@@ -27,14 +29,13 @@ class MoviesApi {
     return randomWord;
   };
 
-
-
   public getAll = async () => {
     const params = {
       s: this.getRandomWord(this.words),
     };
 
-    const { data } = await this.API.get<ResponseAPI>(this.API_KEY, { params });
+    const { data } = await this.API.get<IMoviesResponseAPI>(this.API_KEY, { params });
+
     return data;
   };
 
@@ -43,7 +44,9 @@ class MoviesApi {
       s: this.getRandomWord(this.words),
       page: page,
     };
-    const { data } = await this.API.get<ResponseAPI>(this.API_KEY, { params });
+
+    const { data } = await this.API.get<IMoviesResponseAPI>(this.API_KEY, { params });
+
     return data;
   };
 
@@ -51,7 +54,9 @@ class MoviesApi {
     const params = {
       i: imdbID,
     };
-    const { data } = await this.API.get<IMovieDetails>(this.API_KEY, { params });
+
+    const { data } = await this.API.get<IMovieDetailsAPI>(this.API_KEY, { params });
+
     return data;
   };
 
@@ -60,27 +65,33 @@ class MoviesApi {
       s: this.getRandomWord(this.words),
       y: year,
     };
-    
-    const { data } = await this.API.get<ResponseAPI>(this.API_KEY, { params });
+
+    const { data } = await this.API.get<IMoviesResponseAPI>(this.API_KEY, { params });
+
     return data;
   };
 
   public sortedMovies = async (movieTitle: string) => {
     const params = {
       s: movieTitle,
-  };
+    };
 
-  const { data } = await this.API.get<ResponseAPI>(this.API_KEY, { params });
-  return data;
+    const { data } = await this.API.get<IMoviesResponseAPI>(this.API_KEY, {
+      params,
+    });
+
+    return data;
   };
 
   public sortedMoviesByUserParams = async (values: FilterValue) => {
     const params = {
       ...values,
     };
-    const { data } = await this.API.get<ResponseAPI>(this.API_KEY, { params });
+
+    const { data } = await this.API.get<IMoviesResponseAPI>(this.API_KEY, { params });
+
     return data;
   };
 }
 
-export const moviesApi = new MoviesApi();
+export const moviesAPI = new MoviesAPI();
