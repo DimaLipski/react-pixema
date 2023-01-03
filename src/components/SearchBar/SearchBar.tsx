@@ -1,11 +1,4 @@
 import { useEffect, useState } from "react";
-import { BurgerMenu, CustomLink, SearchMenu } from "components";
-import { BurgerIcon, logoIcon, logoLightIcon, SearchIcon } from "assets";
-import { useDebounce, useInput, useToggle, useWindowSize } from "hooks";
-
-import { fetchMovies, fetchSortMovies } from "store/features";
-import { useAppDispatch, useAppSelector } from "store/hooks";
-import { getUserInfo } from "store/selectors";
 import {
   BurgerButton,
   Container,
@@ -19,6 +12,15 @@ import {
 } from "./styles";
 import { useMatch, useNavigate } from "react-router-dom";
 import { ROUTE } from "../../routes/route";
+import { CustomLink } from "../CustomLink/CustomLink";
+import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
+import { SearchMenu } from "../SearchMenu/SearchMenu";
+import { getUserInfo } from "../../store/selectors/userSelectors";
+import { useAppDispatch } from "../../store/hooks/hooks";
+import { useWindowSize } from "../../hooks/useWindowSize";
+import { useDebounce, useInput, useToggle } from "../../hooks";
+import { fetchMovies, fetchSortMovies } from "../../store/features/moviesSlice";
+import { BurgerIcon, logoIcon, logoLightIcon, SearchIcon } from "../../assets";
 
 export const SearchBar = () => {
   const { name, isAuth, isDark } = useAppSelector(getUserInfo);
