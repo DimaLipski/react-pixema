@@ -1,8 +1,7 @@
-import { CustomLink } from "components";
 import { ToolBar, Title, Wrapper, CloseButton } from "./styles";
-import { ROUTE } from "routes";
-import { Color } from "ui";
 import { AnimatePresence } from "framer-motion";
+import { CustomLink } from "../CustomLink/CustomLink";
+import { ROUTE } from "../../routes/route";
 
 interface IProps {
   setToggle: () => void;

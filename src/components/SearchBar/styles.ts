@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color } from "ui/";
+import { Color } from "../../ui/colors";
 
 export const Wrapper = styled.div`
   position: sticky;

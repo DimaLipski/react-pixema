@@ -1,7 +1,4 @@
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
-import { CloseIcons } from "assets";
-import { fetchMoviesByParams } from "store/features";
-import { useAppDispatch } from "store/hooks";
 import Select from "react-select";
 import {
   AttentionMessage,
@@ -17,10 +14,13 @@ import {
   Title,
   Wrapper,
 } from "./styles";
-import { Input } from "components";
-import { FilterValue, IOption } from "types";
-import { Color } from "ui";
 import { AnimatePresence } from "framer-motion";
+import { CloseIcons } from "../../assets";
+import { fetchMoviesByParams } from "../../store/features/moviesSlice";
+import { useAppDispatch } from "../../store/hooks/hooks";
+import { Input } from "../Input/Input";
+import { FilterValue, IOption } from "../../types/types";
+import { Color } from "../../ui/colors";
 
 interface IProps {
   setIsOpen: (isOpen: boolean) => void;

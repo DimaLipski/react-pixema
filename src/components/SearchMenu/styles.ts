@@ -1,8 +1,8 @@
 import { StylesConfig } from "react-select";
 import styled from "styled-components";
-import { IOption } from "types";
-import { Color } from "ui";
 import { motion } from "framer-motion";
+import { IOption } from "../../types/types";
+import { Color } from "../../ui/colors";
 
 export const Wrapper = styled(motion.div)`
   position: fixed;

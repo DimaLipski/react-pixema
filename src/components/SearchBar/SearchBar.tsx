@@ -16,7 +16,7 @@ import { CustomLink } from "../CustomLink/CustomLink";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import { SearchMenu } from "../SearchMenu/SearchMenu";
 import { getUserInfo } from "../../store/selectors/userSelectors";
-import { useAppDispatch } from "../../store/hooks/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks/hooks";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { useDebounce, useInput, useToggle } from "../../hooks";
 import { fetchMovies, fetchSortMovies } from "../../store/features/moviesSlice";

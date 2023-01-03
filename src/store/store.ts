@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import moviesReducer from "./features/moviesSlice";
 import movieReducer from "./features/movieDetailsSlice";
-
+import userReducer from "./features/userSlice";
 import favoritesReducer from "./features/favoritesSlice";
 import trendsReducer from "./features/trendsSlice";
 

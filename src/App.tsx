@@ -1,23 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter } from 'react-router-dom';
-import { AppRouter } from './components/AppRouter/AppRouter';
-import { MenuNav } from './components/MenuNav/MenuNav';
-import { moviesApi } from './services/restMoviesAPI';
-import { AppWrapper } from './ui';
-
-type Theme = "dark" | "light";
+import { Route, Routes } from "react-router-dom";
+import { MainTemplate } from "./components/MainTemplate/MainTemplate";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { ROUTE } from "./routes/route";
 
 export const App = () => {
-  const [theme, setTheme] = useState<Theme>("dark");
-  useEffect(() => document.documentElement.setAttribute("theme", theme), [theme]);
-  
-
   return (
-    <BrowserRouter>
-      <AppWrapper>
-        <MenuNav />
-        <AppRouter />
-      </AppWrapper>
-    </BrowserRouter>
+    <Routes>
+      <Route path={ROUTE.HOME} element={<MainTemplate />}>
+        <Route index element={<HomePage />} />
+        
+      </Route>
+      
+      
+    </Routes>
   );
 };

@@ -1,7 +1,6 @@
 import { CustomLink } from "./CustomLink/CustomLink";
 import { MainTemplate } from "./MainTemplate/MainTemplate";
 import { AuthTemplate } from "./AuthTemplate/AuthTemplate";
-
 import { MovieList } from "./MovieList/MovieList";
 import { MovieListItem } from "./MovieListItem/MovieListItem";
 import { RequireAuth } from "./RequireAuth/RequireAuth";
@@ -21,11 +20,12 @@ import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import { SearchMenu } from "./SearchMenu/SearchMenu";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { CustomSwiper } from "./CustomSwiper/CustomSwiper";
-import { Portal } from "./Portal/Portal";
 import { SignInModal } from "./SignInModal/SignInModal";
 import { SignUpModal } from "./SignUpModal/SignUpModal";
 import { SettingsPageModal } from "./SettingsPageModal/SettingsPageModal";
 import { LoadingMoreSpinner } from "./LoadingMoreSpinner/LoadingMoreSpinner";
+import { Portal } from "./Portal/Portal";
+import { Menu } from "./Menu/Menu";
 
 export {
     CustomLink,

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Color } from "ui";
+import { Color } from "../../ui/colors";
+
 
 export const ToolBar = styled.div`
   position: fixed;

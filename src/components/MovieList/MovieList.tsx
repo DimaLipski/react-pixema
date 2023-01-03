@@ -1,17 +1,23 @@
 
-import { IMovies } from "../../types/types";
-import { MovieCard } from "../MovieCard/MovieCard";
-import { MovieList } from "./styles";
+import { StyledMovieList } from "./styles";
+import { useAppSelector } from "../../store/hooks/hooks";
+import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
+import { MovieListItem } from "../MovieListItem/MovieListItem";
+import { getMovies } from "../../store/selectors/movieSelector";
+import { IMovie } from "../../types/types";
 
-interface IProps {
-  movies: IMovies[];
-}
-export const MoviesList = ({ movies }: IProps) => {
+export const MovieList = () => {
+  const { isLoading, movies } = useAppSelector(getMovies);
+
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
+
   return (
-    <MovieList>
-      {movies.map(({ imdbID, Title, Poster }) => (
-        <MovieCard key={imdbID} title={Title} img={Poster} id={imdbID} />
+    <StyledMovieList>
+      {movies.map(({ year, title, poster, imdbID }: IMovie) => (
+        <MovieListItem key={imdbID} year={year} title={title} poster={poster} imdbID={imdbID} />
       ))}
-    </MovieList>
+    </StyledMovieList>
   );
 };
