@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Description } from "./styles";
 
-export const FormSubTitle = () => {
-  return (
-    <div>FormSubTitle</div>
-  )
+interface IProps {
+  children: string;
 }
+
+export const FormSubTitle = ({ children }: IProps) => {
+  return <Description children={children} />;
+};
