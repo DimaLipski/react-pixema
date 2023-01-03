@@ -1,19 +1,19 @@
+export interface IMoviesResponseAPI {
+  Search: IMovieAPI[];
+  totalResults: string;
+  Response: boolean;
+  Error?: string;
+}
 
-export interface IMovies {
-  Title: string;
-  Year: string;
-  imdbID: string;
-  Type: string;
-  Poster: string;
-}
 export interface IMovieAPI {
+  Poster: string;
   Title: string;
+  Type: string;
   Year: string;
   imdbID: string;
-  Type: string;
-  Poster: string;
 }
-export interface  IMovieDetailsAPI {
+
+export interface IMovieDetailsAPI {
   Title: string;
   Year: string;
   Rated: string;
@@ -28,7 +28,7 @@ export interface  IMovieDetailsAPI {
   Country: string;
   Awards: string;
   Poster: string;
-  Ratings: IRating[];
+  Ratings: RatingAPI[];
   Metascore: string;
   imdbRating: string;
   imdbVotes: string;
@@ -41,9 +41,17 @@ export interface  IMovieDetailsAPI {
   Response: string;
 }
 
-export interface IRating {
+export interface RatingAPI {
   Source: string;
   Value: string;
+}
+
+export interface IMovie {
+  poster: string;
+  title: string;
+  type: string;
+  year: string;
+  imdbID: string;
 }
 
 export interface IMovieDetails {
@@ -73,28 +81,13 @@ export interface IMovieDetails {
   response: string;
 }
 
-export interface ResponseAPI {
-  Search: IMovieAPI[];
-  totalResults: string;
-  Response: boolean;
-  Error?: string;
+export interface IOption {
+  value: string;
+  label: string;
 }
 
 export interface FilterValue {
   type: string;
   s: string;
   y: string;
-}
-
-export interface IMovie {
-  poster: string;
-  title: string;
-  type: string;
-  year: string;
-  imdbID: string;
-}
-
-export interface IOption {
-  value: string;
-  label: string;
 }
