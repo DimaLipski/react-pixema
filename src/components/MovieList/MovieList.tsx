@@ -1,10 +1,9 @@
 
 import { StyledMovieList } from "./styles";
-import { useAppSelector } from "../../store/hooks/hooks";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
-import { MovieListItem } from "../MovieListItem/MovieListItem";
-import { getMovies } from "../../store/selectors/movieSelector";
-import { IMovie } from "../../types/types";
+import { useAppSelector } from "store/hooks/";
+import { LoadingSpinner, MovieListItem } from "components";
+import { getMovies } from "store/selectors";
+import { IMovie } from "types";
 
 export const MovieList = () => {
   const { isLoading, movies } = useAppSelector(getMovies);
