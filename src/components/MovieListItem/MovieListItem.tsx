@@ -1,8 +1,8 @@
 
-import { FavoritesIcon, TrendsIcon } from "../../assets";
-import { removeFromFavorites } from "../../store/features/favoritesSlice";
-import { useAppDispatch } from "../../store/hooks/hooks";
-import { Color } from "../../ui/colors";
+import { FavoritesIcon, TrendsIcon } from "assets";
+import { removeFromFavorites } from "store/features";
+import { useAppDispatch } from "store/hooks";
+import { Color } from "ui";
 import { Movie, MoviePoster, Released, CustomLink, Title } from "./styles";
 
 interface IProps {
