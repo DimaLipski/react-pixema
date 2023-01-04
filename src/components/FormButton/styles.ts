@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Color } from "ui";
 
-
 export const Button = styled.button`
   padding: 16px 0;
   margin-top: 40px;
