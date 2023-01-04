@@ -12,18 +12,23 @@ export const Wrapper = styled(motion.div)`
   max-width: 1920px;
   width: 100%;
   padding-right: 24px;
+
   @media screen and (min-width: 768px) {
     padding-right: 40px;
   }
+
   @media screen and (min-width: 1024px) {
     padding-right: 48px;
   }
+
   @media screen and (min-width: 1280px) {
     padding-right: 176px;
   }
+
   @media screen and (min-width: 1440px) {
     padding-right: 128px;
   }
+
   @media screen and (min-width: 1920px) {
     padding-right: 62px;
   }
@@ -43,6 +48,7 @@ export const FilterForm = styled.form`
   height: 100vh;
   width: 100%;
   background-color: ${Color.Black};
+
   @media screen and (min-width: 768px) {
     max-width: 550px;
   }
