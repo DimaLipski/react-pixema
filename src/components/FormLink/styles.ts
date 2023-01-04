@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Color } from "ui";
 
-
 export const StyledFormLink = styled(Link)`
   border-bottom: 3px solid ${Color.Secondary};
   font-family: Exo 2;
