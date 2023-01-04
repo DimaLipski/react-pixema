@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Color } from "ui";
 
-
 export const Description = styled.p`
   margin-bottom: 8px;
   font-family: Exo 2;
