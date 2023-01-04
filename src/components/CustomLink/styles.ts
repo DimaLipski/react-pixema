@@ -12,6 +12,7 @@ export const StyledCustomLink = styled(Link)<{ $isActive: boolean }>`
   color: ${({ $isActive }) => ($isActive ? Color.Secondary : Color.Primary)};
   fill: ${({ $isActive }) => ($isActive ? Color.Secondary : Color.Primary)};
   stroke: ${({ $isActive }) => ($isActive ? Color.Secondary : Color.Primary)};
+
   :hover {
     color: ${Color.SecondaryLight};
     fill: ${Color.SecondaryLight};
