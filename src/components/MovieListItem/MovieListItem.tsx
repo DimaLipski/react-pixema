@@ -1,5 +1,4 @@
-
-import { FavoritesIcon, TrendsIcon } from "assets";
+import { FavoritesIcon, notFoundImage, TrendsIcon } from "assets";
 import { removeFromFavorites } from "store/features";
 import { useAppDispatch } from "store/hooks";
 import { Color } from "ui";

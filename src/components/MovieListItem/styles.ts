@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Color } from "ui";
 
-
 export const Movie = styled(motion.li)`
   display: flex;
   flex-direction: column;
@@ -37,6 +36,7 @@ export const Title = styled.span`
   line-height: 24px;
   letter-spacing: 0em;
   color: ${Color.Secondary};
+
   :hover {
     color: ${Color.Primary};
     fill: ${Color.Primary};
