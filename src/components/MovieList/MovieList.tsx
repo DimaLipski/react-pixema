@@ -1,7 +1,6 @@
-
-import { StyledMovieList } from "./styles";
 import { useAppSelector } from "store/hooks/";
 import { LoadingSpinner, MovieListItem } from "components";
+import { StyledMovieList } from "./styles";
 import { getMovies } from "store/selectors";
 import { IMovie } from "types";
 
