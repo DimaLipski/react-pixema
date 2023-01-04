@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import { Container } from "./styles";
 import { Menu, SearchBar } from "components";
-import { useWindowSize } from "hooks/useWindowSize";
+import { useWindowSize } from "hooks";
+import { Container } from "./styles";
 
 export const MainTemplate = () => {
   const { width = 0 } = useWindowSize();
