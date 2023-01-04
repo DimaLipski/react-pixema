@@ -1,10 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { MainTemplate } from "./components/MainTemplate/MainTemplate";
-import { ROUTE } from "./routes/route";
-import { HomePage } from "./pages/HomePage/HomePage";
-import { RequireAuth } from "components";
-import { FavoritesPage, SettingsPage } from "pages";
-
+import { MainTemplate, RequireAuth } from "components";
+import { FavoritesPage, HomePage, SettingsPage,} from "pages";
+import { ROUTE } from "routes";
 
 export const App = () => {
   return (
