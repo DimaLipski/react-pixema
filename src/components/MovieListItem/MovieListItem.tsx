@@ -1,4 +1,4 @@
-import { FavoritesIcon, notFoundImage, TrendsIcon } from "assets";
+import { FavoritesIcon} from "assets";
 import { removeFromFavorites } from "store/features";
 import { useAppDispatch } from "store/hooks";
 import { Color } from "ui";
@@ -23,7 +23,6 @@ export const MovieListItem = ({ title, poster, imdbID, year, isTrend, isFavorite
       whileHover={{ scale: 1.1, transition: { delay: 0.2 } }}
     >
       <>
-      
         {isFavorite && (
           <FavoritesIcon
             style={{
