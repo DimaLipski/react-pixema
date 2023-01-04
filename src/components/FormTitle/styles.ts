@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Color } from "ui";
 
-
 export const Title = styled.h2`
   margin-bottom: 18px;
   font-family: Exo 2;
@@ -11,6 +10,7 @@ export const Title = styled.h2`
   letter-spacing: 0em;
   text-align: left;
   color: ${Color.White};
+
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     font-family: Exo 2;
