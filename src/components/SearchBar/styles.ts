@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color } from "ui";
+import { Color } from "ui/";
 
 export const Wrapper = styled.div`
   position: sticky;
@@ -13,19 +13,24 @@ export const Wrapper = styled.div`
     "search search";
   padding: 40px 24px 5px;
   background: ${Color.Black};
+
   @media screen and (min-width: 768px) {
     display: flex;
     padding: 40px 40px 56px;
   }
+
   @media screen and (min-width: 1024px) {
     padding: 40px 48px 56px;
   }
+
   @media screen and (min-width: 1280px) {
     padding: 40px 176px 56px;
   }
+
   @media screen and (min-width: 1440px) {
     padding: 40px 128px 56px;
   }
+
   @media screen and (min-width: 1920px) {
     padding: 40px 62px 56px;
   }
@@ -121,6 +126,7 @@ export const BurgerButton = styled.button`
   border-radius: 10px;
   background: none;
   cursor: pointer;
+
   @media screen and (min-width: 768px) {
     margin-left: 32px;
     margin-bottom: 0;
