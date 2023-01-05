@@ -1,7 +1,12 @@
-import React from 'react'
+import { SignIn, SignInModal } from "components";
+import { useToggle } from "hooks";
 
 export const SignInPage = () => {
+  const [state, toggle] = useToggle(false);
   return (
-    <div>Page</div>
-  )
-}
+    <>
+      <SignIn toggle={toggle} />
+      {state && <SignInModal toggle={toggle} />}
+    </>
+  );
+};
