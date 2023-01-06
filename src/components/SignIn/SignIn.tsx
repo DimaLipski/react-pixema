@@ -18,7 +18,6 @@ interface IProps {
   toggle: () => void;
 }
 
-
 export const SignIn = ({ toggle }: IProps) => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const { isPendingAuth } = useAppSelector(getUserInfo);
