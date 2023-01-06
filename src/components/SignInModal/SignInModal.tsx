@@ -1,9 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { Portal } from "components";
 import { ROUTE } from "routes";
-import { Message, Wrapper } from "./styles";
 import { PortalTarget } from "components/Portal";
-
+import { Message, Wrapper } from "./styles";
 interface IProps {
   toggle: () => void;
 }
