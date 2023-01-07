@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { AuthTemplate, MainTemplate, RequireAuth } from "components";
-import { ErrorPage, FavoritesPage, HomePage, MoviePage, ResetPasswordPage, SettingsPage, SignInPage, SignUpPage, TrendsPage,} from "pages";
+import { FavoritesPage, HomePage, MoviePage, ResetPasswordPage, SettingsPage, SignInPage, SignUpPage, TrendsPage,} from "pages";
 import { ROUTE } from "routes";
 
 export const App = () => {
