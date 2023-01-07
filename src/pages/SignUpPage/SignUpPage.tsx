@@ -1,7 +1,14 @@
-import React from 'react'
+import { SignUp, SignUpModal } from "components";
+import { useToggle } from "hooks";
 
 export const SignUpPage = () => {
+  const [state, toggle] = useToggle(false);
+
   return (
-    <div>Page</div>
-  )
-}
+    <>
+      <SignUp toggle={toggle} />
+
+      {state && <SignUpModal toggle={toggle} />}
+    </>
+  );
+};
