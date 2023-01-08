@@ -1,4 +1,3 @@
-
 import { Navigate, Outlet } from "react-router-dom";
 import { ROUTE } from "routes";
 import { useAppSelector } from "store/hooks";
