@@ -7,7 +7,6 @@ export const SignUpPage = () => {
   return (
     <>
       <SignUp toggle={toggle} />
-
       {state && <SignUpModal toggle={toggle} />}
     </>
   );
