@@ -2,6 +2,7 @@ import logoIcon from "./icons/logo.svg";
 import logoLightIcon from "./icons/logo-light.svg";
 import backgroundAuth from "./background/background.png";
 import trendsIcon from "./icons/trends.svg";
+import notFound from "./background/not-found.jpg";
 import { ReactComponent as SearchIcon } from "./icons/search.svg";
 import { ReactComponent as HomeIcon } from "./icons/home.svg";
 import { ReactComponent as FavoritesIcon } from "./icons/favorites.svg";
@@ -24,4 +25,5 @@ export {
   FavoritesIsEmptyIcon,
   backgroundAuth,
   trendsIcon,
+  notFound
 };

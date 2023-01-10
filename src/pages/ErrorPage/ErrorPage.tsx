@@ -1,7 +1,10 @@
-import React from 'react'
+import { ROUTE } from "routes";
+import { HomeLink, Wrapper } from "./styles";
 
 export const ErrorPage = () => {
   return (
-    <div>ErrorPage</div>
-  )
-}
+    <HomeLink to={ROUTE.HOME}>
+      <Wrapper />
+    </HomeLink>
+  );
+};
