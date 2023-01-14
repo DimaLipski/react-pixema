@@ -6,6 +6,7 @@ import { FavoritesEmpty } from "./styles";
 
 export const FavoritesPage = () => {
   const { favorites } = useAppSelector(getFavorites);
+
   return (
     <>
       {favorites.length === 0 ? (

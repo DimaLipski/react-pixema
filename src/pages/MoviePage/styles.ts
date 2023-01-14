@@ -21,6 +21,7 @@ export const Wrapper = styled(motion.div)`
       "buttons description"
       ". description";
   }
+
   @media screen and (min-width: 1440px) {
     grid-template-columns: minmax(266px, 272px) minmax(auto, 878px);
     padding-left: 238px;
@@ -120,6 +121,7 @@ export const MoviePoster = styled.img`
     max-width: 208px;
     height: 278px;
   }
+
   @media screen and (min-width: 1440px) {
     height: 357px;
     max-width: 272px;
@@ -160,6 +162,7 @@ export const Buttons = styled.div<{ $isAddToFavorites: boolean }>`
   @media screen and (min-width: 768px) {
     max-width: 208px;
   }
+
   @media screen and (min-width: 1440px) {
     max-width: 272px;
   }
@@ -283,9 +286,11 @@ export const Writers = styled.span`
 export const SwiperContainer = styled.div`
   max-width: 1184px;
   width: 100%;
+
   @media screen and (min-width: 768px) {
     padding-left: 240px;
   }
+
   @media screen and (min-width: 1440px) {
     padding-left: 544px;
   }

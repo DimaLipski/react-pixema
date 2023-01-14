@@ -68,6 +68,7 @@ export const ButtonsBlock = styled.div`
     grid-template-areas: "cancel save";
     grid-gap: 45px;
   }
+
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,6 +125,7 @@ export const CancelButton = styled.button`
   border: 1px solid ${Color.Border};
   border-radius: 10px;
   cursor: pointer;
+
   @media screen and (min-width: 768px) {
     max-width: 320px;
   }
@@ -146,6 +148,7 @@ export const SaveButton = styled.button`
   border: none;
   border-radius: 10px;
   cursor: pointer;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
     max-width: 320px;
