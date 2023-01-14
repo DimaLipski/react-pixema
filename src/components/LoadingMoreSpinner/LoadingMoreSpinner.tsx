@@ -1,7 +1,9 @@
-import React from 'react'
+import { Ring, Element } from "./styles";
 
 export const LoadingMoreSpinner = () => {
   return (
-    <div>LoadingMoreSpinner</div>
-  )
-}
+    <Ring>
+      <Element />
+    </Ring>
+  );
+};
