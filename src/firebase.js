@@ -10,6 +10,5 @@ export const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
-// eslint-disable-next-line no-unused-vars
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);

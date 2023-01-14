@@ -19,7 +19,7 @@ import { FavoritesList } from "./FavoritesList/FavoritesList";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import { SearchMenu } from "./SearchMenu/SearchMenu";
 import { SearchBar } from "./SearchBar/SearchBar";
-import { CustomSwiper } from "./CustomSwiper/CustomSwiper";
+
 import { SignInModal } from "./SignInModal/SignInModal";
 import { SignUpModal } from "./SignUpModal/SignUpModal";
 import { SettingsPageModal } from "./SettingsPageModal/SettingsPageModal";
@@ -50,7 +50,7 @@ export {
     SearchMenu,
     SearchBar,
     AuthTemplate,
-    CustomSwiper,
+
     Portal,
     SignInModal,
     SignUpModal,

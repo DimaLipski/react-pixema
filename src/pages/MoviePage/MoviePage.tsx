@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { FavoritesIcon, notFound } from "assets";
-import { CustomSwiper, LoadingSpinner } from "components";
+import { LoadingSpinner } from "components";
 import { useToggle } from "hooks";
 import { getDetailsMovie, getUserInfo } from "store/selectors";
 import { IMovieDetails } from "types";
@@ -102,7 +102,7 @@ export const MoviePage = () => {
         </Description>
       </Wrapper>
       <SwiperContainer>
-        <CustomSwiper />
+
       </SwiperContainer>
     </>
   );
