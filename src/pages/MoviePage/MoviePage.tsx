@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { FavoritesIcon, notFoundImage } from "assets";
+import { FavoritesIcon, notFound } from "assets";
 import { CustomSwiper, LoadingSpinner } from "components";
 import { useToggle } from "hooks";
 import { getDetailsMovie, getUserInfo } from "store/selectors";
@@ -75,7 +75,7 @@ export const MoviePage = () => {
   return (
     <>
       <Wrapper initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
-        {poster === "N/A" ? <MoviePoster src={notFoundImage} /> : <MoviePoster src={poster} />}
+        {poster === "N/A" ? <MoviePoster src={notFound} /> : <MoviePoster src={poster} />}
         {isAuth && (
           <Buttons $isAddToFavorites={state} onClick={handleAddFavorites}>
             <FavoritesIcon />
