@@ -1,4 +1,4 @@
-import { Ring, Element } from "./styles";
+import { Element, Ring } from "./styles";
 
 export const LoadingSpinner = () => {
   return (
