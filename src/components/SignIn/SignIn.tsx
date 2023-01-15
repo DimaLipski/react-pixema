@@ -68,7 +68,11 @@ export const SignIn = ({ toggle }: IProps) => {
               },
             }}
             render={({ field: { onChange, value } }) => (
-              <Input onChange={onChange} value={value} placeholder="Your name" type="text" />
+              <Input 
+                onChange={onChange} 
+                value={value || ""} 
+                placeholder="Your name" 
+                type="text" />
             )}
           />
           {errors.userSignInName && (
@@ -88,7 +92,10 @@ export const SignIn = ({ toggle }: IProps) => {
               },
             }}
             render={({ field: { onChange, value } }) => (
-              <Input onChange={onChange} value={value} placeholder="Your email" type="text" />
+              <Input onChange={onChange} 
+                value={value || ""} 
+                placeholder="Your email" 
+                type="text" />
             )}
           />
 
@@ -111,7 +118,7 @@ export const SignIn = ({ toggle }: IProps) => {
             render={({ field: { onChange, value } }) => (
               <Input
                 onChange={onChange}
-                value={value}
+                value={value || ""}
                 placeholder="Your password"
                 type="password"
               />

@@ -77,7 +77,7 @@ export const SignUp = ({ toggle }: IProps) => {
               },
             }}
             render={({ field: { onChange, value } }) => (
-              <Input onChange={onChange} value={value} placeholder="Your name" type="text" />
+              <Input onChange={onChange} value={value || ""} placeholder="Your name" type="text" />
             )}
           />
           {errors.userName && (
@@ -96,7 +96,7 @@ export const SignUp = ({ toggle }: IProps) => {
               },
             }}
             render={({ field: { onChange, value } }) => (
-              <Input onChange={onChange} value={value} placeholder="Your email" type="text" />
+              <Input onChange={onChange} value={value || ""} placeholder="Your email" type="text" />
             )}
           />
           {errors.userEmail && (
@@ -121,7 +121,7 @@ export const SignUp = ({ toggle }: IProps) => {
             render={({ field: { onChange, value } }) => (
               <Input
                 onChange={onChange}
-                value={value}
+                value={value || ""}
                 placeholder="Your password"
                 type="password"
               />
@@ -141,7 +141,7 @@ export const SignUp = ({ toggle }: IProps) => {
             render={({ field: { onChange, value } }) => (
               <Input
                 onChange={onChange}
-                value={value}
+                value={value || ""}
                 placeholder="Confirm password"
                 type="password"
               />

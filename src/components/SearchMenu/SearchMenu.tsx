@@ -81,7 +81,7 @@ export const SearchMenu = ({ setIsOpen, isOpen }: IProps) => {
                     render={({ field: { onChange, value } }) => (
                       <Input
                         onChange={onChange}
-                        value={value}
+                        value={value || ""} 
                         placeholder="Enter title"
                         type="text"
                       />
@@ -124,7 +124,7 @@ export const SearchMenu = ({ setIsOpen, isOpen }: IProps) => {
                     render={({ field: { onChange, value } }) => (
                       <Input
                         onChange={onChange}
-                        value={value}
+                        value={value || ""}
                         placeholder="Enter year"
                         type="number"
                       />
